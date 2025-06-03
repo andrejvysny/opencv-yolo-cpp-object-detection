@@ -1,0 +1,39 @@
+%YAML:1.0
+active_model: yolov4
+save_detections: true
+models:
+  yolov4:
+    cfg:     "models/yolov4.cfg"
+    weights: "models/yolov4.weights"
+    names:   "models/coco.names"
+    input_width:  608
+    input_height: 608
+    conf_thresh:  0.5
+    nms_thresh:   0.45
+
+  yolov3:
+    cfg:     "models/yolov3.cfg"
+    weights: "models/yolov3.weights"
+    names:   "models/coco.names"
+    input_width:  416
+    input_height: 416
+    conf_thresh:  0.3
+    nms_thresh:   0.45
+
+  yolov4-tiny:
+    cfg:     "models/yolov4-tiny.cfg"
+    weights: "models/yolov4-tiny.weights"
+    names:   "models/coco.names"
+    input_width:  416
+    input_height: 416
+    conf_thresh:  0.5
+    nms_thresh:   0.5
+
+  yolov3-tiny:
+    cfg:     "models/yolov3-tiny.cfg"
+    weights: "models/yolov3-tiny.weights"
+    names:   "models/coco.names"
+    input_width:  416
+    input_height: 416
+    conf_thresh:  0.3
+    nms_thresh:   0.45
